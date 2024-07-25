@@ -48,10 +48,10 @@ export const DATA = {
       },
       X: {
         name: "X",
-        url: "https://dub.sh/dillion-twitter",
+        url: "https://x.com/_paarthb",
         icon: Icons.x,
 
-        navbar: false,
+        navbar: true,
       },
       Youtube: {
         name: "Youtube",
@@ -92,7 +92,7 @@ export const DATA = {
       start: "Jan 2024",
       end: "Apr 2024",
       description:
-        "Worked closely with Diplomatic Security Service teams to develop full-stack applications for use cases in OSINT and field intelligence/data analytics."
+        "Worked closely with Diplomatic Security Service teams to develop full-stack applications using React, Java Spring, and Postgres for use cases in OSINT and field intelligence/data analytics."
       },
     {
       company: "ASU Barrett Honors College",
@@ -113,8 +113,8 @@ export const DATA = {
       location: "Anthem, AZ",
       title: "Center Director",
       logoUrl: "/mathnasium.png",
-      start: "January 2020",
-      end: "April 2020",
+      start: "December 2022",
+      end: "August 2023",
       description:
         "Managed and grew a team from 70 to 100+ students. Increased student retention by 20%. Also acted as a social media manager",
       },
@@ -153,7 +153,7 @@ export const DATA = {
       dates: "May 2024 - June 2024",
       active: false,
       description:
-        "Developed a transformer model from scratch to generate shakespearan text. Inspired by and built with the help of Andrej Karpathy",
+        "Developed a transformer model from scratch to generate shakespearan text. Inspired by and built with the help of Andrej Karpathy's microGPT.",
         technologies: [
         "Python",
         "Pytorch",
@@ -168,7 +168,7 @@ export const DATA = {
         },
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: "/transformer-demo.mp4",
     },
     {
       title: "Multi-PDF Chatbot",
@@ -191,9 +191,8 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      image: "/chatbot-demo.jpg",
+      video: "",
     },
     {
       title: "Djisktra's Algorithm Simulation",
