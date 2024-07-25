@@ -71,29 +71,41 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
-      href: "https://atomic.finance",
+      company: "ASU Biodesign Institute",
+      href: "https://biodesign.asu.edu/",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
-      start: "May 2021",
-      end: "Oct 2022",
+      location: "Hybrid",
+      title: "LLM Developer",
+      logoUrl: "/biodesign.png",
+      start: "May 2024",
+      end: "Present",
       description:
-        "Implemented the Bitcoin discreet log contract (DLC) protocol specifications as an open source Typescript SDK. Dockerized all microservices and setup production kubernetes cluster. Architected a data lake using AWS S3 and Athena for historical backtesting of bitcoin trading strategies. Built a mobile app using react native and typescript.",
-    },
+        "Working on fine-tuning pLMs for sequence and structural alignment as part of the scikit-bio library. Previously built tutorials to be displayed at the ISMB bioinformatics conference.",
+        },
     {
-      company: "Shopify",
+      company: "U.S Department of State",
+      href: "https://state.gov",
       badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/shopify.svg",
-      start: "January 2021",
-      end: "April 2021",
+      location: "In-Person",
+      title: "Development Intern",
+      logoUrl: "/usdos.png",
+      start: "Jan 2024",
+      end: "Apr 2024",
       description:
-        "Implemented a custom Kubernetes controller in Go to automate the deployment of MySQL and ProxySQL custom resources in order to enable 2,000+ internal developers to instantly deploy their app databases to production. Wrote several scripts in Go to automate MySQL database failovers while maintaining master-slave replication topologies and keeping Zookeeper nodes consistent with changes.",
-    },
+        "Worked closely with Diplomatic Security Service teams to develop full-stack applications for use cases in OSINT and field intelligence/data analytics."
+      },
+    {
+      company: "ASU Barrett Honors College",
+      badges: [],
+      href: "https://students.barretthonors.asu.edu/academics/barrett-writing-center",
+      location: "In-Person",
+      title: "Honors Tutor",
+      logoUrl: "/asu.png",
+      start: "January 2023",
+      end: "Present",
+      description:
+        "Acted as one of 10 tutors to 4000+ Barrett Undergraduates, assisting with writing theses and research papers.",
+      },
     {
       company: "Mathnasium",
       href: "https://www.mathnasium.com/math-centers/anthemaz",
@@ -104,8 +116,8 @@ export const DATA = {
       start: "January 2020",
       end: "April 2020",
       description:
-        "Architected and wrote the entire MVP of the GeForce Now Cloud Gaming internal admin and A/B testing dashboard using React, Redux, TypeScript, and Python.",
-    },
+        "Managed and grew a team from 70 to 100+ students. Increased student retention by 20%. Also acted as a social media manager",
+      },
   ],
   education: [
     {
@@ -134,31 +146,29 @@ export const DATA = {
     },
   ],
   projects: [
+
     {
-      title: "Djisktra's Algorithm Simulation",
-      href: "https://github.com/paarth-b/Djikstras-Simulator",
-      dates: "Oct 2023-Nov 2023",
-      active: true,
+      title: "transformer-v1 (microGPT)",
+      href: "https://github.com/paaarthb/transformer-v1",
+      dates: "May 2024 - June 2024",
+      active: false,
       description:
-        "Built a simple Djisktra simulation as a class project. Flexing some C++ skills ;)",
-      technologies: [
-        "C++",
-        "Git",
+        "Developed a transformer model from scratch to generate shakespearan text. Inspired by and built with the help of Andrej Karpathy",
+        technologies: [
+        "Python",
+        "Pytorch",
+        "Pandas",
+        "Model Generation",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/paaarthb/transformer-v1",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      video: "https://cdn.llm.report/openai-demo.mp4",
     },
     {
       title: "Multi-PDF Chatbot",
@@ -186,37 +196,30 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
     },
     {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: false,
+      title: "Djisktra's Algorithm Simulation",
+      href: "https://github.com/paarth-b/Djikstras-Simulator",
+      dates: "Oct 2023-Nov 2023",
+      active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Built a simple Djisktra simulation as a class project. Flexing some C++ skills ;)",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "C++",
+        "Git",
       ],
       links: [
         {
           type: "Website",
-          href: "https://llm.report",
+          href: "https://magicui.design",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/magicuidesign/magicui",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
+      video: "https://cdn.magicui.design/bento-grid.mp4",
     },
   ],
 } as const;
