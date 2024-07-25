@@ -208,13 +208,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/paarth-b/Djikstras-Simulator",
           icon: <Icons.github className="size-3" />,
         },
       ],
