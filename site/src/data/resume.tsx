@@ -163,7 +163,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/paaarthb/transformer-v1",
+          href: "https://github.com/paarthb/transformer-v1",
           icon: <Icons.github className="size-3" />,
         },
       ],
