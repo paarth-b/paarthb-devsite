@@ -2,10 +2,6 @@
 
 Personal portfolio website, built with React and Next.js.
 
-## About
-
-ML researcher working on protein interaction research at Mayo Clinic and computational biology projects at ASU Biodesign Institute. Featured work includes contributions to the scikit-bio library (published in Nature Methods) and research on protein language models.
-
 ## Tech Stack
 
 - **Framework:** Next.js 16 with App Router
