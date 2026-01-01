@@ -85,7 +85,7 @@ export const DATA = {
       location: "Remote",
       title: "ML Researcher",
       logoUrl: "/mayo.png",
-      start: "May 2024",
+      start: "Jan 2026",
       end: "Present",
       description:
         "Full-time ML researcher working on moonshot protein interaction research. Developing novel approaches for understanding protein-protein interactions and their applications in therapeutic development.",
