@@ -54,11 +54,23 @@ export default function Page() {
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
+            {DATA.skills.map((skill, id) => {
+              const categoryColors = {
+                language: "bg-blue-500 text-white hover:bg-blue-600",
+                framework: "bg-emerald-500 text-white hover:bg-emerald-600",
+                tool: "bg-purple-500 text-white hover:bg-purple-600",
+              };
+              return (
+                <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
+                  <Badge
+                    key={skill.name}
+                    className={categoryColors[skill.category as keyof typeof categoryColors]}
+                  >
+                    {skill.name}
+                  </Badge>
+                </BlurFade>
+              );
+            })}
           </div>
         </div>
       </section>
