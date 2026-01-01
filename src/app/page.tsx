@@ -14,7 +14,7 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
+        <div className="mx-auto w-full max-w-3xl space-y-8">
           <div className="gap-2 flex justify-between">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
@@ -56,9 +56,9 @@ export default function Page() {
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => {
               const categoryColors = {
-                language: "bg-blue-500 text-white hover:bg-blue-600",
-                framework: "bg-emerald-500 text-white hover:bg-emerald-600",
-                tool: "bg-purple-500 text-white hover:bg-purple-600",
+                language: "bg-blue-100 text-blue-900 hover:bg-blue-200 dark:bg-blue-900 dark:text-blue-100 dark:hover:bg-blue-800",
+                framework: "bg-emerald-100 text-emerald-900 hover:bg-emerald-200 dark:bg-emerald-900 dark:text-emerald-100 dark:hover:bg-emerald-800",
+                tool: "bg-purple-100 text-purple-900 hover:bg-purple-200 dark:bg-purple-900 dark:text-purple-100 dark:hover:bg-purple-800",
               };
               return (
                 <BlurFade key={skill.name} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
