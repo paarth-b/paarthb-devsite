@@ -14,10 +14,10 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-3xl space-y-8">
-          <div className="gap-2 flex justify-between">
+        <div className="mx-auto w-full space-y-8">
+          <div className="gap-3 flex flex-col sm:flex-row sm:justify-between sm:items-start">
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
+              <Avatar className="size-20 sm:size-28 border">
                 <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
@@ -25,12 +25,12 @@ export default function Page() {
             <div className="flex-col flex flex-1 space-y-1.5">
               <BlurFadeText
                 delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+                className="text-2xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-6xl/none"
                 yOffset={8}
                 text={`${DATA.name} 🦾`}
               />
               <BlurFadeText
-                className="max-w-[600px] md:text-xl"
+                className="text-sm sm:text-base md:text-lg"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
               />
@@ -104,10 +104,10 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background font-bold p-3 text-5xl">
+                <div className="inline-block rounded-lg bg-foreground text-background font-bold p-2 sm:p-3 text-3xl sm:text-4xl md:text-5xl">
                   Projects
                 </div>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-sm sm:text-base text-muted-foreground md:text-lg lg:text-base xl:text-xl">
                   Focused on machine learning research and computational biology.
                   From protein language models to transformer architectures.
                 </p>
@@ -184,16 +184,16 @@ export default function Page() {
         </div>
       </section>
       <section id="contact">
-        <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+        <div className="grid items-center justify-center gap-4 text-center w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl lg:text-5xl">
                 Get in Touch
               </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              <p className="mx-auto max-w-[600px] text-sm sm:text-base text-muted-foreground md:text-lg lg:text-base xl:text-xl">
                 Send me an email {" "}
                 <Link
                   href={DATA.contact.email}
